@@ -1,9 +1,11 @@
 #! /usr/bin/env python
+from __future__ import print_function
 import sourmash_lib.signature
 import csv
 import argparse
 import gzip
 import sys
+
 
 def main():
     p = argparse.ArgumentParser()
@@ -40,6 +42,10 @@ def main():
 
             #print('md5 {} has accession {}'.format(md5[:8], acc), file=sys.stderr)
             md5sums[md5] = acc
+
+    if not siglist:
+        print('no signatures!? quitting.', file=sys.stderr)
+        sys.exit(-1)
 
     with open(args.sourmash_csv) as fp:
 
