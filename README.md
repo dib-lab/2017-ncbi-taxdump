@@ -56,3 +56,13 @@ for col in superkingdom phylum order class family genus species;
 do
 echo $col $(./compare-lineage-files.py kaijudb_e_SRR606249.pe.qc.fq.gz.abundtrim.out.lineage gather.lineage $col);
 done
+```
+
+Specifically, you can do (on the HPC):
+
+```
+for col in superkingdom phylum order class family genus species;
+do
+echo $col $(./compare-lineage-files.py /mnt/research/ged/ctb/tax/kaijudb_e_SRR606249.pe.qc.fq.gz.abundtrim.out.lineage gather.lineage $col);
+done
+```
