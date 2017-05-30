@@ -49,6 +49,12 @@ where column is one of `(superkingdom phylum order class family genus species)`.
 
 The output will be `only_A only_B both_AB`.
 
+Note that you can specify `-m` to filter the lineages in the first lineage
+file by abundance (e.g. `-m 1000` at a genus level would show only those
+genuses that show up 1000 times or more in the Kaiju file).
+
+----
+
 To run it for all of 'em at once, do:
 
 ``` 
