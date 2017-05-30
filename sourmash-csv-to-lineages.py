@@ -33,7 +33,12 @@ def main():
             acc = sig.name().split(' ')[0]   # first part of sequence name
             acc = acc.split('.')[0]          # get acc w/o version
 
-            print('md5 {} has accession {}'.format(md5[:8], acc), file=sys.stderr)
+            # @CTB hack hack split off NZ from accession
+            if acc.startswith('NZ_'):
+                print(acc, file=sys.stderr)
+                acc = acc[3:]
+
+            #print('md5 {} has accession {}'.format(md5[:8], acc), file=sys.stderr)
             md5sums[md5] = acc
 
     with open(args.sourmash_csv) as fp:
