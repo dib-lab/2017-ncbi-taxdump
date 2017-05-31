@@ -43,9 +43,10 @@ def main():
             col = line.strip()
             if len(col):
                 col = col.split(';')
-                col = col[:column_idx]
-                col = ';'.join(col)
-                a_cnt[col] += 1
+                if col[column_idx]:
+                    col = col[:column_idx]
+                    col = ';'.join(col)
+                    a_cnt[col] += 1
 
     # threshold at a given count if desired (default is 0 threshold)
     a = set()
@@ -65,9 +66,10 @@ def main():
             col = line.strip()
             if len(col):
                 col = col.split(';')
-                col = col[:column_idx]
-                col = ';'.join(col)
-                b.add(col)
+                if col[column_idx]:
+                    col = col[:column_idx]
+                    col = ';'.join(col)
+                    b.add(col)
 
     # show unique-to-a, unique-to-b, common, tax_level
     print(len(a - b), len(b - a), len(a.intersection(b)), tax_level)
