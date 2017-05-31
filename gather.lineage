@@ -1,5 +1,4 @@
-lineage
-
+Bacteria;Proteobacteria;Betaproteobacteria;Burkholderiales;Burkholderiaceae;Paraburkholderia;Paraburkholderia xenovorans
 Bacteria;Cyanobacteria;;Nostocales;Nostocaceae;Nostoc;Nostoc sp. PCC 7120
 Bacteria;Planctomycetes;Planctomycetia;Planctomycetales;Planctomycetaceae;Rhodopirellula;Rhodopirellula baltica
 Bacteria;Bacteroidetes;Bacteroidia;Bacteroidales;Bacteroidaceae;Bacteroides;Bacteroides thetaiotaomicron
@@ -18,7 +17,7 @@ Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;Rue
 Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;Sulfitobacter;Sulfitobacter sp. NAS-14.1
 Bacteria;Firmicutes;Clostridia;Clostridiales;Ruminococcaceae;Ruminiclostridium;Ruminiclostridium thermocellum
 Bacteria;Proteobacteria;Deltaproteobacteria;Desulfuromonadales;Geobacteraceae;Geobacter;Geobacter sulfurreducens
-
+Archaea;Euryarchaeota;Halobacteria;Haloferacales;Haloferacaceae;Haloferax;Haloferax volcanii
 Bacteria;Deinococcus-Thermus;Deinococci;Deinococcales;Deinococcaceae;Deinococcus;Deinococcus radiodurans
 Bacteria;Chlorobi;Chlorobia;Chlorobiales;Chlorobiaceae;Chlorobium;Chlorobium phaeobacteroides
 Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacterales Family III. Incertae Sedis;Caldicellulosiruptor;Caldicellulosiruptor bescii
@@ -43,7 +42,7 @@ Bacteria;Thermotogae;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga;Thermot
 Bacteria;Dictyoglomi;Dictyoglomia;Dictyoglomales;Dictyoglomaceae;Dictyoglomus;Dictyoglomus turgidum
 Bacteria;Firmicutes;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Thermoanaerobacter;Thermoanaerobacter pseudethanolicus
 Bacteria;Proteobacteria;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Zymomonas;Zymomonas mobilis
-
+Bacteria;Aquificae;Aquificae;Aquificales;Hydrogenothermaceae;Sulfurihydrogenibium;
 Archaea;Crenarchaeota;Thermoprotei;Thermoproteales;Thermoproteaceae;Pyrobaculum;Pyrobaculum calidifontis
 Bacteria;Aquificae;Aquificae;Aquificales;Hydrogenothermaceae;Persephonella;Persephonella marina
 Bacteria;Proteobacteria;Alphaproteobacteria;Rhodobacterales;Rhodobacteraceae;Sulfitobacter;Sulfitobacter sp. EE-36
@@ -61,5 +60,5 @@ Archaea;Euryarchaeota;;;;Aciduliprofundum;Aciduliprofundum boonei
 Bacteria;Aquificae;Aquificae;Aquificales;Hydrogenothermaceae;Sulfurihydrogenibium;Sulfurihydrogenibium yellowstonense
 Archaea;Crenarchaeota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Ignicoccus;Ignicoccus hospitalis
 Bacteria;Thermotogae;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga;Thermotoga sp. RQ2
-
+Archaea;DPANN group;Nanoarchaeota;Nanoarchaeales;Nanoarchaeaceae;Nanoarchaeum;Nanoarchaeum equitans
 Bacteria;Fusobacteria;Fusobacteriia;Fusobacteriales;Fusobacteriaceae;Fusobacterium;Fusobacterium nucleatum

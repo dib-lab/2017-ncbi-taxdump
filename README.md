@@ -9,7 +9,7 @@ Create a CSV containing taxonomic lineage for NCBI accession numbers.
 
 Usage:
 ```
-./sourmash-csv-to-lineages.py gather.csv gather-matches.sig genbank-genomes-accession+lineage-20170529.csv.gz > lineages.csv
+./sourmash-csv-to-lineages.py gather.csv gather-matches.sig genbank-genomes-accession+lineage-20170529.csv.gz --extra-info extra_info.csv > lineages.csv
 ```
 
 where `gather.csv` comes from `sourmash gather -o` and `gather-matches.sig`
@@ -39,7 +39,7 @@ This will produce a `*.lineage` file in the cwd directory.
 ## Comparing lineage files
 
 To construct a lineage file from the output of `sourmash-csv-to-lineages.py`,
-do e.g. `cut -d, -f4 gather.csv > gather.lineage`.
+do e.g. `cut -d, -f4 lineages.csv | tail -n +2 > gather.lineage`.
 
 Then run:
 
