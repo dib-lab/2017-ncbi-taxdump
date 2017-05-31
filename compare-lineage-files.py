@@ -37,14 +37,12 @@ def main():
 
     print('loading', args.file1, file=sys.stderr)
     with open(args.file1) as fp:
-        next(fp)
-        
         for line in fp:
             col = line.strip()
             if len(col):
                 col = col.split(';')
                 if col[column_idx]:
-                    col = col[:column_idx]
+                    col = col[:column_idx + 1]
                     col = ';'.join(col)
                     a_cnt[col] += 1
 
@@ -60,14 +58,12 @@ def main():
     b = set()
     print('loading', args.file2, file=sys.stderr)
     with open(args.file2) as fp:
-        next(fp)
-        
         for line in fp:
             col = line.strip()
             if len(col):
                 col = col.split(';')
                 if col[column_idx]:
-                    col = col[:column_idx]
+                    col = col[:column_idx + 1]
                     col = ';'.join(col)
                     b.add(col)
 
@@ -76,7 +72,8 @@ def main():
 
     # output?
     if args.output_details:
-        print('writing output details to {}.*'.format(args.output_details))
+        print('writing output details to {}.*'.format(args.output_details),
+              file=sys.stderr)
         with open(args.output_details + '.only_a', 'w') as fp:
             for name in a - b:
                 fp.write("{}\n".format(name))
