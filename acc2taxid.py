@@ -1,4 +1,10 @@
 #! /usr/bin/env python
+"""
+Take a file full of accessions and one or more NCBI 'accession2taxid' files
+and create a CSV named 'acc_file.taxid' that contains the accessions
+and their associated taxids.
+"""
+
 from __future__ import print_function
 import argparse
 import gzip

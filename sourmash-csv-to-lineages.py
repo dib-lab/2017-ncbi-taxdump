@@ -1,4 +1,10 @@
 #! /usr/bin/env python
+"""
+Take a sourmash output CSV containing md5sums ('search' and 'gather'),
+a collection of associated signatures, and a file containing accession
+-> lineage information, and create a new CSV file with md5sum, accession,
+taxid, and a lineage string.
+"""
 from __future__ import print_function
 import sourmash_lib.signature
 import csv

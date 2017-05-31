@@ -1,4 +1,12 @@
 #! /usr/bin/env python
+"""
+Convert kaiju detailed output to NCBI lineages using the NCBI taxdump.
+
+The nodes_dmp and names_dmp files are from
+ftp://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
+
+Creates a lineage.gz file named by appending that to kaiju input file.
+"""
 from __future__ import print_function
 import sys
 import argparse
@@ -13,8 +21,8 @@ want_taxonomy = ['superkingdom', 'phylum', 'class', 'order', 'family', 'genus', 
 def parse_kaiju(filename):
     with open(filename) as fp:
         for line in fp:
-            if line[0] == 'C':
-                yield int(line.split()[2])
+            if line[0] == 'C':            # skip unclassified / 'U'
+                yield int(line.split()[2])   # get column 3
 
 
 def main():
@@ -28,7 +36,7 @@ def main():
     names = parse_names(args.names_dmp)
     child_to_parent, node_to_info = parse_nodes(args.nodes_dmp)
 
-    print('parsing kaiju')
+    print('parsing kaiju file:', args.kaiju_out)
 
     n = 0
     x = []
@@ -47,10 +55,6 @@ def main():
 
             if n % 100000 == 0:
                 print('...', n)
-
-#            if n > 11000:
-#                break
-
 
 
 if __name__ == '__main__':

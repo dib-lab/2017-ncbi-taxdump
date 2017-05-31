@@ -1,4 +1,7 @@
 #! /usr/bin/env python
+#
+# don't use, too slow.
+#
 import leveldb
 import argparse
 
